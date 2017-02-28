@@ -17,10 +17,9 @@ const Menu = () => (
 
 const Sig = () => (
   <Link to={prefixLink('/')}>
-    <div id='sig-button' className='bar-item'>
-      <img id='sig' src={sig} />
-      <button id='button'></button>
-    </div>
+    <button id='sig' className='bar-item'>
+      <img src={sig} />      
+    </button>
   </Link>
 );
 
