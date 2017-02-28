@@ -16,11 +16,13 @@ const Menu = () => (
 );
 
 const Sig = () => (
-  <Link to={prefixLink('/')}>
-    <button id='sig' className='bar-item'>
-      <img src={sig} />      
-    </button>
-  </Link>
+  <div id='sig-wrapper'>
+    <Link to={prefixLink('/')}>
+      <button id='sig' className='bar-item'>
+        <img src={sig} />
+      </button>
+    </Link>
+  </div>
 );
 
 const Template = (props) => (

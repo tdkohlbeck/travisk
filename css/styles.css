@@ -1,4 +1,4 @@
-* {
+body {
 	margin: 0px;
 	padding: 0px;
 }
@@ -17,20 +17,29 @@
 	box-shadow: inset 0px -2px 10px lightgrey;
 }
 
+#sig-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 75px;
+}
+
 #sig {
-  position: inherit;
-  overflow: visible;
+
 	width: 100px;
 	height: 50px;
 }
 
 #sig img {
-  position: absolute;
   width: 125px;
   height: 75px;
-  top: 12.5px; /* TODO: not this */
-  left: 12.5px; /* TODO: not this */
-  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .bar-item {
