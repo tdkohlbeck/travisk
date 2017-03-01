@@ -8,11 +8,11 @@ import menu from '../menu.svg';
 import '../css/styles.css';
 
 const MenuItem = (props) => (
-  <div id='menu-item'>
-    <Link to={prefixLink(props.url)}>
+  <Link to={prefixLink(props.url)}>
+    <div id='menu-item'>
       {props.text}
-    </Link>
-  </div>
+    </div>
+</Link>
 );
 
 const Menu = () => (
