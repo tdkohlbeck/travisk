@@ -65,13 +65,11 @@ button:hover {
   fill: violet;
 }
 
-#paths {
-  fill: red;
-  stroke: red;
-}
-
 #menu-wrapper {
   position: relative;
+  font-family: sans-serif;
+  font-size: 22px;
+
 }
 
 #menu img {
@@ -82,12 +80,19 @@ button:hover {
 
 #menu-content {
   display: none;
+  padding-bottom: 10px;
 }
 
 #menu-item {
   display: flex;
-  margin: 0 10px 5px 10px;
-  flex-direction: row-reverse;
+  padding: 5px 15px 5px 15px;
+
+  color: black;
+}
+
+#menu-item:hover {
+  background-color: #f8f8f8;
+  color: grey;
 }
 
 #menu-wrapper:hover #menu-content {
@@ -95,14 +100,22 @@ button:hover {
   position: absolute;
   flex-direction: column;
   background-color: #e8e8e8;
-  width: 200px;
   right: 0;
+  top: 0;
+  padding-top: 50px;
   border-radius: 6px;
-  border-top-right-radius: 0px;
+  z-index: -1;
+}
+
+#menu-wrapper a {
+  color: black;
+  text-decoration: none;
 }
 
 #menu-wrapper:hover #menu {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   background-color: #e8e8e8;
+  color: grey;
+  cursor: default;
 }

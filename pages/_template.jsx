@@ -9,7 +9,9 @@ import '../css/styles.css';
 
 const MenuItem = (props) => (
   <div id='menu-item'>
-    <Link to={prefixLink(props.url)}>{props.text}</Link>
+    <Link to={prefixLink(props.url)}>
+      {props.text}
+    </Link>
   </div>
 );
 
@@ -17,15 +19,15 @@ const Menu = () => (
   <div id='menu-wrapper'>
 
     <button id='menu' className='bar-item'>
-      <img src={menu} />
+      {'MENU'}
     </button>
 
     <div id='menu-content'>
-      <MenuItem text='About Me' url='/#bravo' />
-      <MenuItem text='Contact' url='/#bravo' />
-      <MenuItem text='Resume' url='/#bravo' />
-      <MenuItem text='Blog' url='/#bravo' />
-      <MenuItem text='Projects' url='/#bravo' />
+      <MenuItem text='ABOUT ME' url='/#bravo' />
+      <MenuItem text='CONTACT' url='/#bravo' />
+      <MenuItem text='RESUME' url='/#bravo' />
+      <MenuItem text='BLOG' url='/#bravo' />
+      <MenuItem text='PROJECTS' url='/#bravo' />
     </div>
 
   </div>
