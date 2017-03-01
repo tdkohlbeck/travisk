@@ -3,7 +3,7 @@ import Headroom from 'react-headroom';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 
-import sig from '../signature.svg';
+import Sig from '../Signature.jsx'
 import menu from '../menu.svg';
 import '../css/styles.css';
 
@@ -31,10 +31,10 @@ const Menu = () => (
   </div>
 );
 
-const Sig = () => (
+const SigButton = () => (
     <Link to={prefixLink('/')} id='sig-wrapper'>
-      <button id='sig' className='bar-item'>
-        <img src={sig} />
+      <button id='sig-button' className='bar-item'>
+        <Sig id='sig' />
       </button>
     </Link>
 );
@@ -43,7 +43,7 @@ const Template = (props) => (
   <div>
 
     <Headroom id='header-bar'>
-      <Sig />
+      <SigButton />
       <Menu />
     </Headroom>
 

@@ -47,12 +47,12 @@ button:hover {
   height: 75px;
 }
 
-#sig {
+#sig-button {
 	width: 100px;
 	height: 50px;
 }
 
-#sig img {
+#sig {
   position: absolute;
 
   top: 0;
@@ -61,6 +61,13 @@ button:hover {
   bottom: 0;
   width: 125px;
   height: 75px;
+  stroke: violet;
+  fill: violet;
+}
+
+#paths {
+  fill: red;
+  stroke: red;
 }
 
 #menu-wrapper {
@@ -92,7 +99,6 @@ button:hover {
   right: 0;
   border-radius: 6px;
   border-top-right-radius: 0px;
-
 }
 
 #menu-wrapper:hover #menu {
