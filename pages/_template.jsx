@@ -3,7 +3,7 @@ import Headroom from 'react-headroom';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 
-import Sig from '../Signature.jsx'
+import Sig from '../Signature.jsx';
 import menu from '../menu.svg';
 import '../css/styles.css';
 
@@ -12,31 +12,31 @@ const MenuItem = (props) => (
     <div id='menu-item'>
       {props.text}
     </div>
-</Link>
+  </Link>
 );
 
 const Menu = () => (
-  <div id='menu-wrapper'>
+  <div id='menu'>
 
-    <button id='menu' className='bar-item'>
-      {'MENU'}
+    <button id='menu-button' className='bar-item'>
+      {'Menu'}
     </button>
 
     <div id='menu-content'>
-      <MenuItem text='ABOUT ME' url='/#bravo' />
-      <MenuItem text='CONTACT' url='/#bravo' />
-      <MenuItem text='RESUME' url='/#bravo' />
-      <MenuItem text='BLOG' url='/#bravo' />
-      <MenuItem text='PROJECTS' url='/#bravo' />
+      <MenuItem text='About Me' url='/#bravo' />
+      <MenuItem text='Blog' url='/#bravo' />
+      <MenuItem text='Contact' url='/#bravo' />
+      <MenuItem text='Resume' url='/#bravo' />
+      <MenuItem text='Projects' url='/#bravo' />
     </div>
 
   </div>
 );
 
 const SigButton = () => (
-    <Link to={prefixLink('/')} id='sig-wrapper'>
-      <button id='sig-button' className='bar-item'>
-        <Sig id='sig' />
+    <Link to={prefixLink('/')} id='logo'>
+      <button id='logo-button' className='bar-item'>
+        <Sig id='logo-sig' />
       </button>
     </Link>
 );

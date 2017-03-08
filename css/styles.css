@@ -1,10 +1,14 @@
 * {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+  font-size: calc(0.5em + 1vw);
 }
 
 #content {
-  margin: 25px;
+  margin: 1em;
 }
 
 #header-bar {
@@ -12,10 +16,11 @@
 	align-items: center;
 	justify-content: space-between;
 
-  height: 100px;
-  padding: 0 25px;
+  height: 7.5em;
+  width: 100%;
+  padding: 0 2em;
 	background-color: #f8f8f8;
-	box-shadow: inset 0px 0px 8px lightgrey;
+	box-shadow: inset 0 -0.25em .25em hsla(0, 0%, 0%, 0.125);
 }
 
 .bar-item {
@@ -25,11 +30,11 @@
 }
 
 button {
-  width: 100px;
-  height: 50px;
+  width: 5em;
+  height: 2.5em;
   background-color: #f8f8f8;
   border: none;
-  border-radius: 6px;
+  border-radius: 0.5em;
 }
 
 button:hover {
@@ -37,45 +42,44 @@ button:hover {
   cursor: pointer;
 }
 
-#sig-wrapper { /* allows the img room to grow beyond button size*/
+#logo {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 125px;
-  height: 75px;
+  width: 10em;
+  height: 6em;
 }
 
-#sig-button {
-	width: 100px;
-	height: 50px;
+#logo-button {
+	width: 5em;
+	height: 2.5em;
 }
 
-#sig {
+#sig { /* referring to id of svg (see Signature.jsx) */
   position: absolute;
 
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 125px;
-  height: 75px;
+  width: 10em;
+  height: 6em;
   stroke: black;
   fill: black;
+  stroke-width: 1.5;
 }
 
-#menu-wrapper {
+#menu {
   position: relative;
   font-family: sans-serif;
-  font-size: 22px;
-
+  font-size: 2em;
+  font-weight: lighter;
 }
 
-#menu img {
-  margin: 0px;
-	width: 75px;
-  height: 50px;
+#menu * {
+  text-transform: uppercase;
 }
 
 #menu-content {
@@ -88,6 +92,7 @@ button:hover {
   flex-direction: row-reverse;
   padding: 5px 15px 5px 15px;
   color: black;
+  white-space: nowrap;
 }
 
 #menu-item:hover {
@@ -95,7 +100,7 @@ button:hover {
   color: black;
 }
 
-#menu-wrapper:hover #menu-content {
+#menu:hover #menu-content {
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -108,12 +113,12 @@ button:hover {
   box-shadow: 0px 4px 0px lightgrey;
 }
 
-#menu-wrapper a {
+#menu a {
   color: black;
   text-decoration: none;
 }
 
-#menu-wrapper:hover #menu {
+#menu:hover #menu-button {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   background-color: #e8e8e8;
