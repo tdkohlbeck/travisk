@@ -23,11 +23,11 @@ const Menu = () => (
     </button>
 
     <div id='menu-content'>
-      <MenuItem text='About Me' url='/#bravo' />
-      <MenuItem text='Blog' url='/#bravo' />
-      <MenuItem text='Contact' url='/#bravo' />
-      <MenuItem text='Resume' url='/#bravo' />
-      <MenuItem text='Projects' url='/#bravo' />
+      <MenuItem text='About Me' url='/about/' />
+      <MenuItem text='Blog' url='/blog/' />
+      <MenuItem text='Contact' url='/contact/' />
+      <MenuItem text='Resume' url='/resume/' />
+      <MenuItem text='Projects' url='/projects/' />
     </div>
 
   </div>
