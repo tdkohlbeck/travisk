@@ -16,7 +16,7 @@
 	align-items: center;
 	justify-content: space-between;
 
-  height: 7.5em;
+  height: 100px;
   width: 100%;
   padding: 0 2em;
 	background-color: #f8f8f8;
@@ -40,88 +40,4 @@ button {
 button:hover {
 	background-color: #e8e8e8;
   cursor: pointer;
-}
-
-#logo {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 10em;
-  height: 6em;
-}
-
-#logo-button {
-	width: 5em;
-	height: 2.5em;
-}
-
-#sig { /* referring to id of svg (see Signature.jsx) */
-  position: absolute;
-
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 10em;
-  height: 6em;
-  stroke: black;
-  fill: black;
-  stroke-width: 1.5;
-}
-
-#menu {
-  position: relative;
-  font-family: sans-serif;
-  font-size: 2em;
-  font-weight: lighter;
-}
-
-#menu * {
-  text-transform: uppercase;
-}
-
-#menu-content {
-  display: none;
-  padding-bottom: 10px;
-}
-
-#menu-item {
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 5px 15px 5px 15px;
-  color: black;
-  white-space: nowrap;
-}
-
-#menu-item:hover {
-  background-color: #f8f8f8;
-  color: black;
-}
-
-#menu:hover #menu-content {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  background-color: #e8e8e8;
-  right: 0;
-  top: 0;
-  padding-top: 50px;
-  border-radius: 6px;
-  z-index: -1;
-  box-shadow: 0px 4px 0px lightgrey;
-}
-
-#menu a {
-  color: black;
-  text-decoration: none;
-}
-
-#menu:hover #menu-button {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  background-color: #e8e8e8;
-
-  cursor: default;
 }

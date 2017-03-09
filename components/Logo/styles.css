@@ -1,0 +1,14 @@
+#logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 10em;
+  height: 6em;
+}
+
+#logo button {
+	width: 5em;
+	height: 2.5em;
+}
