@@ -4,11 +4,17 @@
   align-items: center;
   justify-content: center;
 
-  width: 10em;
-  height: 6em;
+  width: 10rem;
+  height: 6rem;
 }
 
 #logo button {
-	width: 5em;
-	height: 2.5em;
+	width: 7.5em;
+	height: 3.75em;
+
+  
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 0.5em;
+
 }

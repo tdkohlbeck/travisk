@@ -10,3 +10,4 @@
 * test the build
 * replace on server
 * handle menu behavior for taps vs clicks
+* close menu after click

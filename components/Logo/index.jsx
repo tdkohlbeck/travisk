@@ -8,7 +8,7 @@ import './styles.css';
 
 const Logo = () => (
   <Link to={prefixLink('/')} id='logo'>
-    <button className='bar-item'>
+    <button>
       <Sig />
     </button>
   </Link>

@@ -6,7 +6,7 @@ import './styles.css';
 const Menu = () => (
   <div id='menu'>
 
-    <button id='menu-button' className='bar-item'>
+    <button id='menu-button'>
       {'Menu'}
     </button>
 

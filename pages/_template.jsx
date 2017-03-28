@@ -12,8 +12,8 @@ const Template = (props) => (
   <div>
 
     <Headroom id='header-bar'>
-      <Logo />
-      <Menu />
+      <Logo className='bar-item' />
+      <Menu className='bar-item' />
     </Headroom>
 
     <div id='content'>

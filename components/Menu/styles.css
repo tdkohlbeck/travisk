@@ -2,7 +2,7 @@
 #menu {
   position: relative;
   font-family: sans-serif;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: lighter;
 }
 
@@ -16,7 +16,7 @@
 }
 
 #menu:hover #menu-content {
-  display: flex;
+  display: block;
   position: absolute;
   flex-direction: column;
   background-color: #e8e8e8;
@@ -39,4 +39,12 @@
   background-color: #e8e8e8;
 
   cursor: default;
+}
+
+#menu button {
+  width: 5em;
+  height: 2.5em;
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 0.5em;
 }
